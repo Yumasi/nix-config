@@ -1,20 +1,23 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, ... }:
 
+let
+  build_settings = import ./config;
+
+  flavour = ./flavours + "/${build_settings.flavour}.nix";
+  hostName = build_settings.hostName;
+in
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      flavour
+      ./system
     ];
 
-  # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  services.virtualbox.enable = true;
+  networking.hostName = hostName;
 
   environment.systemPackages = with pkgs; [
     vim tmux git mosh htop
@@ -25,5 +28,4 @@
   # servers. You should change this only after NixOS release notes say you
   # should.
   system.stateVersion = "19.03"; # Did you read the comment?
-
 }

@@ -1,0 +1,11 @@
+# Settings for building this NixOS machine
+#
+# flavour:
+#  Desc: The type of machine we are dealing with
+#  Values: virtualbox
+# hostName:
+#  Desc: The machine hostname
+{
+  flavour = "virtualbox";
+  hostName = "cyclops";
+}
