@@ -6,7 +6,7 @@
     description = "Guillaume Pagnoux";
     home = "/home/yumasi";
     group = "yumasi";
-    extraGroups = [ "users" "wheel" ];
+    extraGroups = [ "libvirtd" "users" "video" "wheel" ];
     isNormalUser = true;
   };
 }
