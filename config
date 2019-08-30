@@ -6,6 +6,6 @@
 # hostName:
 #  Desc: The machine hostname
 {
-  flavour = "virtualbox";
-  hostName = "cyclops";
+  flavour = "laptop";
+  hostName = "normandy";
 }
