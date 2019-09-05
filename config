@@ -2,7 +2,7 @@
 #
 # flavour:
 #  Desc: The type of machine we are dealing with
-#  Values: virtualbox
+#  Values: virtualbox laptop workstation
 # hostName:
 #  Desc: The machine hostname
 {
