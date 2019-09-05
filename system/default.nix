@@ -2,6 +2,7 @@
 {
   imports = [
     ./users.nix
+    ./luks.nix
   ];
 
   system.autoUpgrade.enable = true;

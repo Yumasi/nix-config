@@ -1,0 +1,11 @@
+#+TITLE: Nixos Machine Configuration
+
+This is the home for my nixOS configurations.
+
+* Installation
+
+Format your disks, mount the partitions, then run:
+
+#+begin_src sh
+sh -c $(curl -fsSL https://raw.githubusercontent.com/Yumasi/nix-config/master/bootstrap.sh)
+#+end_src
