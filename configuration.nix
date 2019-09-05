@@ -14,13 +14,19 @@ in
       ./system
     ];
 
+  # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = hostName;
 
   environment.systemPackages = with pkgs; [
-    vim tmux git mosh htop
+    git
+    htop
+    mosh
+    pciutils
+    tmux
+    vim
   ];
 
   # This value determines the NixOS release with which your system is to be
