@@ -7,7 +7,10 @@
     desktopManager.default = "none";
     desktopManager.xterm.enable = false;
 
-    displayManager.lightdm.greeters.enso.enable = true;
+    displayManager.lightdm.greeters.mini = {
+      enable = true;
+      user = "yumasi";
+    };
 
     windowManager.default = "i3";
     windowManager.i3.enable = true;
