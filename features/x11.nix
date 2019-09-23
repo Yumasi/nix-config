@@ -15,4 +15,7 @@
     windowManager.default = "i3";
     windowManager.i3.enable = true;
   };
+
+  services.xserver.autoRepeatDelay = 200;
+  services.xserver.autoRepeatInterval = 60;
 }
