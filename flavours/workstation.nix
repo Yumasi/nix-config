@@ -3,6 +3,7 @@
   imports = [
     ../features/x11.nix
     ../features/virt.nix
+    ../features/weechat.nix
   ];
 
   # I don't care about mitigations in a VM
