@@ -3,6 +3,7 @@
   imports = [
     ./users.nix
     ./luks.nix
+    ./ssh.nix
   ];
 
   system.autoUpgrade.enable = true;
