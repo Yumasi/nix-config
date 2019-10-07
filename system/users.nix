@@ -10,7 +10,7 @@ in
     description = "Guillaume Pagnoux";
     home = "/home/yumasi";
     group = "yumasi";
-    extraGroups = [ "libvirtd" "users" "video" "wheel" ];
+    extraGroups = [ "audio" "libvirtd" "users" "video" "wheel" ];
     isNormalUser = true;
     shell = zsh;
     uid = 1000;
