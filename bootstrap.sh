@@ -52,7 +52,7 @@ create_home_directory() {
 
 fetch_config() {
     info "[+] Fetching configuration from Github"
-    curl -L https://github.com/Yumasi/nix-config/tarball/master | tar xz --strip-components=1 -C "${ROOT_PREFIX}/${REPO_DIRECTORY}" --wildcards 'Yumasi-nix-config-*/'
+    curl -L https://github.com/Yumasi/nix-config/tarball/zfs-bootstrap | tar xz --strip-components=1 -C "${ROOT_PREFIX}/${REPO_DIRECTORY}" --wildcards 'Yumasi-nix-config-*/'
     success "[+] Succesfully fetched configuration from Github!"
 }
 
