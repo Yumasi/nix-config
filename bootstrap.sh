@@ -90,10 +90,17 @@ luks_setup() {
     echo '}' >> "${DEST_FILE}"
 }
 
+set_host_id() {
+    info "[+] Setting up hostId"
+
+    sed -i "s/@hostId@/$(head -c 8 /etc/machine-id)/g" "${ROOT_PREFIX}/${NIX_CONFIG}/config"
+}
+
 check_root_user
 
 info "[+] Starting nixOS bootstrap."
 create_home_directory
 fetch_config
 install_config
+set_host_id
 nixos-install

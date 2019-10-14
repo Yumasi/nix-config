@@ -8,4 +8,5 @@
 {
   flavour = "laptop";
   hostName = "normandy";
+  hostId = "@hostId@";
 }

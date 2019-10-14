@@ -5,6 +5,7 @@ let
 
   flavour = ./flavours + "/${build_settings.flavour}.nix";
   hostName = build_settings.hostName;
+  hostId = build_settings.hostId;
 in
 {
   imports =
@@ -19,6 +20,7 @@ in
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = hostName;
+  networking.hostId = hostId;
 
   environment.systemPackages = with pkgs; [
     git
