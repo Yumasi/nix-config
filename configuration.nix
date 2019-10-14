@@ -18,6 +18,7 @@ in
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.generationsDir.copyKernels = true;
 
   networking.hostName = hostName;
   networking.hostId = hostId;
