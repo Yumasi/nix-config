@@ -15,10 +15,12 @@ in
       ./system
     ];
 
-  # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.generationsDir.copyKernels = true;
+
+  boot.loader.grub.enable = true;
+  boot.loader.grub.efiSupport = true;
+  boot.loader.grub.device = "nodev";
 
   boot.supportedFilesystems = [ "zfs" ];
   boot.zfs.enableUnstable = true;
