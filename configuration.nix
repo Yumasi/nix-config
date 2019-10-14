@@ -20,8 +20,14 @@ in
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.generationsDir.copyKernels = true;
 
+  boot.supportedFilesystems = [ "zfs" ];
+  boot.zfs.enableUnstable = true;
+
   networking.hostName = hostName;
   networking.hostId = hostId;
+
+  services.zfs.autoScrub.enable = true;
+  services.zfs.autoSnapshot.enable = true;
 
   environment.systemPackages = with pkgs; [
     git
