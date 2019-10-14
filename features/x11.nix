@@ -9,7 +9,7 @@
 
     displayManager.lightdm.greeters.mini = {
       enable = true;
-      user = "yumasi";
+      user = "XIII";
     };
 
     windowManager.default = "i3";

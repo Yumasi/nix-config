@@ -4,6 +4,6 @@
   services.weechat.enable = true;
   programs.screen.screenrc = ''
                                 multiuser on
-                                acladd yumasi
+                                acladd XIII
                              '';
 }

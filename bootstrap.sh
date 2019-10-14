@@ -4,7 +4,7 @@ set -e
 
 # Options
 ROOT_PREFIX='/mnt'
-USERNAME='yumasi'
+USERNAME='XIII'
 
 # Internal variables
 
