@@ -3,6 +3,7 @@
 *.log
 tmp/
 
+nix-config
 hardware-configuration.nix
 luks.nix
 *.swp
