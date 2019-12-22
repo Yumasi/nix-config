@@ -18,4 +18,13 @@
   fonts.fontconfig.dpi = 192;
   services.xserver.libinput.enable = true;
   services.xserver.libinput.naturalScrolling = true;
+  services.xserver.videoDrivers = [ "intel" ];
+  services.xserver.deviceSection = ''
+      Option "DRI" "2"
+      Option "TearFree" "true"
+  '';
+
+  services.autorandr.enable = true;
+
+  programs.light.enable = true;
 }
