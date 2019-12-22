@@ -12,6 +12,7 @@
 
   hardware = {
     bluetooth.enable = true;
+    brightnessctl.enable = true;
     cpu.intel.updateMicrocode = true;
     pulseaudio.enable = true;
   };
