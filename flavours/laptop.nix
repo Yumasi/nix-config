@@ -11,6 +11,7 @@
   boot.kernelParams = [ "mitigations=off" ];
 
   hardware = {
+    bluetooth.enable = true;
     pulseaudio.enable = true;
   };
 
