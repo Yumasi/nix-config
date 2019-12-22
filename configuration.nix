@@ -24,6 +24,7 @@ in
     git
     htop
     mosh
+    ntfs3g
     pciutils
     tmux
     vim
