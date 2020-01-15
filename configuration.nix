@@ -28,6 +28,7 @@ in
     ntfs3g
     pciutils
     tmux
+    usbutils
     vim
   ];
 
