@@ -13,4 +13,6 @@
   hardware = {
     pulseaudio.enable = true;
   };
+
+  networking.firewall.allowedTCPPorts = [ 8080 8000 ];
 }
