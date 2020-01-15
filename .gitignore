@@ -7,3 +7,4 @@ nix-config
 hardware-configuration.nix
 luks.nix
 *.swp
+vpn.nix

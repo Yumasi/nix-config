@@ -3,6 +3,7 @@
   imports = [
     ../features/ccache.nix
     ../features/virt.nix
+    ../features/vpn.nix
     ../features/wireless.nix
     ../features/x11.nix
   ];
